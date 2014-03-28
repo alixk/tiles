@@ -51,19 +51,19 @@ void Tiles::move (Direction d)
     switch (d) {
         case LEFT:
             for (auto& r : _rows) 
-                moved = collapse (&r, r.begin (), r.end ());
+                moved |= collapse (&r, r.begin (), r.end ());
             break;
         case RIGHT:
             for (auto& r : _rows) 
-                moved = collapse (&r, r.rbegin (), r.rend ());
+                moved |= collapse (&r, r.rbegin (), r.rend ());
             break;
         case UP:
             for (auto& c : _cols) 
-                moved = collapse (&c, c.begin (), c.end ());
+                moved |= collapse (&c, c.begin (), c.end ());
             break;
         case DOWN:
             for (auto& c : _cols) 
-                moved = collapse (&c, c.rbegin (), c.rend ());
+                moved |= collapse (&c, c.rbegin (), c.rend ());
             break;
     }
 

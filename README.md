@@ -1,7 +1,7 @@
 ###2048
 
-This is meant to be a playground for working with 2048 (or variants), a tile
-based puzzle.
+This is meant to be a playground for working with 2048 (or other power of 2
+variants), a tile based puzzle.
 
 ###The rules
 
